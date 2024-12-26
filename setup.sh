@@ -15,4 +15,4 @@ python -c "from app import init_db; init_db()"
 # Run the Flask app
 export FLASK_APP=app.py
 export FLASK_ENV=development
-flask run
+python -m flask run
