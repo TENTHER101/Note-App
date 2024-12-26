@@ -137,3 +137,10 @@ function deleteNote(noteId) {
         fetchNotes();
     });
 }
+
+function logout() {
+    localStorage.removeItem('userId');
+    userId = null;
+    document.getElementById('auth').style.display = 'block';
+    document.getElementById('app').style.display = 'none';
+}
